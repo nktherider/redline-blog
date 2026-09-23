@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Privacy Policy | Nandkishor Blogs</title>
-<meta name="description" content="Privacy Policy for Nandkishor Blogs — what data is collected, affiliate link disclosure, and cookie information.">
+<meta name="description" content="Privacy Policy for Nandkishor Blogs — data practices, Google AdSense cookies, affiliate disclosures, and reader rights.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.nandkishorsharma.com/privacy-policy.html">
 <link rel="stylesheet" href="style.css">
@@ -13,16 +13,20 @@
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 <meta name="author" content="Nandkishor Sharma">
 
+<!-- Google AdSense Verification Script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1158716255114155" crossorigin="anonymous"></script>
+
+<!-- SEO Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Privacy Policy | Nandkishor Blogs">
-<meta property="og:description" content="Privacy Policy for Nandkishor Blogs — what data is collected, affiliate link disclosure, and cookie information.">
+<meta property="og:description" content="Privacy Policy for Nandkishor Blogs — data practices, Google AdSense cookies, affiliate disclosures, and reader rights.">
 <meta property="og:url" content="https://www.nandkishorsharma.com/privacy-policy.html">
 <meta property="og:site_name" content="Nandkishor Blogs">
 <meta property="og:image" content="https://www.nandkishorsharma.com/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy Policy | Nandkishor Blogs">
-<meta name="twitter:description" content="Privacy Policy for Nandkishor Blogs — what data is collected, affiliate link disclosure, and cookie information.">
+<meta name="twitter:description" content="Privacy Policy for Nandkishor Blogs.">
 
 <script type="application/ld+json">
 {
@@ -30,6 +34,7 @@
   "@type": "WebPage",
   "headline": "Privacy Policy",
   "datePublished": "2026-08-04",
+  "dateModified": "2026-09-23",
   "author": { "@type": "Person", "name": "Nandkishor Sharma" },
   "publisher": { "@type": "Person", "name": "Nandkishor Sharma" },
   "description": "Privacy Policy for Nandkishor Blogs.",
@@ -39,9 +44,31 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div id="reading-progress"></div>
+
+<!-- Mobile Drawer Backdrop & Drawer -->
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+  <div class="mobile-drawer-nav">
+    <a href="index.html#home"><span>🏠</span> Home</a>
+    <a href="index.html#uae-riding"><span>⛰️</span> UAE Riding</a>
+    <a href="index.html#superbike-guides"><span>📖</span> Guides</a>
+    <a href="index.html#maintenance"><span>🔧</span> Maintenance</a>
+    <a href="index.html#gear"><span>🧥</span> Gear</a>
+    <a href="index.html#stories"><span>🏁</span> Stories</a>
+    <a href="book.html"><span>📚</span> आखिरी पन्ना (Book)</a>
+    <a href="index.html#about"><span>👤</span> About</a>
+    <a href="contact.html"><span>✉️</span> Contact</a>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="privacy-policy.html" class="active">Privacy Policy</a>
+    <a href="https://instagram.com/nk.rider.eats" target="_blank" rel="noopener">Instagram: @nk.rider.eats</a>
+  </div>
+</aside>
 
 <header class="site">
   <div class="logo-wrap">
@@ -50,6 +77,7 @@
       <div class="logo display">NANDKISHOR<span> BLOGS</span></div>
     </a>
   </div>
+
   <div class="header-right">
     <nav aria-label="Primary">
       <ul>
@@ -58,137 +86,142 @@
         <li><a href="index.html#maintenance">Maintenance</a></li>
         <li><a href="index.html#gear">Gear</a></li>
         <li><a href="index.html#stories">Stories</a></li>
+        <li><a href="book.html">Book</a></li>
         <li><a href="index.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <form action="https://app.us1.list-manage.com/subscribe/post?u=a2bd401c500d481ceb37681dd&amp;id=76bef44306&amp;f_id=007572e1f0" method="post" class="header-subscribe" target="_blank" novalidate aria-label="Subscribe for new posts">
-      <input type="email" name="EMAIL" placeholder="Email for new posts" required aria-label="Email address">
-      <div style="position:absolute; left:-5000px;" aria-hidden="true">
-        <input type="text" name="b_a2bd401c500d481ceb37681dd_76bef44306" tabindex="-1" value="">
-      </div>
-      <button type="submit">Subscribe</button>
-    </form>
+
+    <!-- Dark/Light Theme Toggle -->
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+      <span id="themeIcon">☀️</span>
+    </button>
+
+    <!-- Mobile Hamburger Button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
 
 <main>
-<div class="breadcrumb-bar">
-  <div class="breadcrumb mono"><a href="index.html">Home</a> / <a href="index.html#about">About</a> / <span>Privacy Policy</span></div>
-</div>
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb mono"><a href="index.html">Home</a> / <span>Privacy Policy</span></div>
+  </div>
 
   <article class="post" id="privacy">
     <div class="post-wrap">
       <div class="post-head">
-        <span class="tag">Legal</span>
-        <h1 style="font-size:clamp(26px,5vw,42px);">Privacy Policy</h1>
+        <span class="tag">Legal &amp; Transparency</span>
+        <h1 style="font-size:clamp(28px,5vw,44px);">Privacy Policy</h1>
         <div class="byline">
           <span>Nandkishor Blogs</span>
           <span>·</span>
-          <time datetime="2026-08-04">Last updated 04 August 2026</time>
+          <time datetime="2026-09-23">Last updated 23 September 2026</time>
         </div>
       </div>
-      <div class="post-body reveal">
-        <p>Nandkishor Blogs is a personal blog by Nandkishor Sharma. No account is needed to read anything here, and no personal data is ever sold.</p>
 
+      <div class="post-body reveal">
+        <p>At <strong>Nandkishor Blogs</strong> (accessible at <a href="https://www.nandkishorsharma.com/">https://www.nandkishorsharma.com</a>), the privacy of our visitors is of paramount importance to us. This Privacy Policy document outlines the types of information collected and recorded by Nandkishor Blogs and how we use it.</p>
+
+        <h2>1. Log Files &amp; Hosting Information</h2>
+        <p>Like many websites, Nandkishor Blogs follows a standard procedure of using log files provided by our web host (Vercel). The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of this information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+        <h2>2. Google AdSense &amp; Third-Party Advertising Cookies</h2>
+        <p>We use third-party advertising companies, specifically <strong>Google AdSense</strong>, to serve advertisements when you visit our website.</p>
         <ul class="checklist">
-          <li><strong>What's collected:</strong> basic technical data (IP, browser, pages visited) via our host, Vercel — just to keep the site running and see overall traffic.</li>
-          <li><strong>Affiliate links:</strong> some posts link to Amazon (we're an Amazon Associate). Clicking may set a tracking cookie; we earn a small commission on purchases at no extra cost to you.</li>
-          <li><strong>Cookies:</strong> controllable anytime in your browser settings. Blocking them won't stop you from reading any post.</li>
-          <li><strong>Children:</strong> this site isn't directed at anyone under 13, and we don't knowingly collect their data.</li>
-          <li><strong>Updates:</strong> this policy may change occasionally — the date above always reflects the latest version.</li>
+          <li><strong>Google as a Vendor:</strong> Google uses cookies (including the DoubleClick DART cookie) to serve ads based on a user's prior visits to this website and other sites across the Internet.</li>
+          <li><strong>Personalized Advertising:</strong> Google's use of advertising cookies enables it and its partners to serve ads to our visitors based on their browsing history.</li>
+          <li><strong>Opting Out:</strong> Visitors may choose to opt out of the use of personalized advertising by visiting Google's Ads Settings at <a href="https://adssettings.google.com/" target="_blank" rel="noopener">https://adssettings.google.com/</a>. Alternatively, you can opt out of third-party vendor cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a>.</li>
         </ul>
 
-        <p>Questions? Reach out via the Instagram link in the footer.</p>
+        <h2>3. Affiliate Disclosure &amp; External Links</h2>
+        <p>Some of the articles, gear recommendations, and tools featured on this website may contain affiliate links (including Amazon Associates). If you click through an affiliate link and make a purchase, we may receive a modest commission at absolutely zero additional cost to you. We only recommend gear and products that have been tested and used in real riding conditions.</p>
+
+        <h2>4. Cookies &amp; Browser Controls</h2>
+        <p>Nandkishor Blogs uses basic cookies to remember user preferences (such as your Dark/Light theme selection) and to measure website performance. You can choose to disable or block cookies through your individual browser options. Detailed information about cookie management with specific web browsers can be found at the browsers' respective websites.</p>
+
+        <h2>5. Children's Information</h2>
+        <p>Protecting the privacy of children online is especially important. Nandkishor Blogs does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will promptly remove such information from our records.</p>
+
+        <h2>6. Consent &amp; Contact</h2>
+        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms. If you have additional questions or require more information about our Privacy Policy, please contact us directly via our Instagram handle <strong>@nk.rider.eats</strong> or via our <a href="contact.html">Contact Us</a> page.</p>
       </div>
     </div>
   </article>
 </main>
-
-<aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
-  <ul id="toc-list"></ul>
-</aside>
-
-<div id="tacho" aria-hidden="true">
-  <svg viewBox="0 0 100 100">
-    <path d="M 15 78 A 40 40 0 1 1 85 78" fill="none" stroke="#e2ddd0" stroke-width="6" stroke-linecap="round"/>
-    <path id="tacho-arc" d="M 15 78 A 40 40 0 1 1 85 78" fill="none" stroke="#d81e2c" stroke-width="6" stroke-linecap="round"
-          stroke-dasharray="188" stroke-dashoffset="188"/>
-    <line id="tacho-needle" x1="50" y1="78" x2="50" y2="42" stroke="#c96f0c" stroke-width="2.5" stroke-linecap="round" transform="rotate(-90 50 78)"/>
-    <circle cx="50" cy="78" r="4" fill="#c96f0c"/>
-  </svg>
-  <span class="rpm-label mono">READING</span>
-</div>
 
 <footer class="site">
   <h2 class="display">Ride along</h2>
   <p>New guides post weekly. Follow the rides and food stops in between on Instagram.</p>
   <a class="btn" href="https://instagram.com/nk.rider.eats" target="_blank" rel="noopener">Follow @nk.rider.eats →</a>
 
-  <div class="footer-subscribe">
-    <div class="subscribe-label mono">GET NEW POSTS BY EMAIL</div>
-    <form action="https://app.us1.list-manage.com/subscribe/post?u=a2bd401c500d481ceb37681dd&amp;id=76bef44306&amp;f_id=007572e1f0" method="post" class="subscribe-form" target="_blank" novalidate>
-      <input type="email" name="EMAIL" placeholder="you@email.com" required aria-label="Email address">
-      <div style="position:absolute; left:-5000px;" aria-hidden="true">
-        <input type="text" name="b_a2bd401c500d481ceb37681dd_76bef44306" tabindex="-1" value="">
-      </div>
-      <button type="submit">Subscribe</button>
-    </form>
+  <div class="footer-nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#uae-riding">UAE Riding</a>
+    <a href="index.html#superbike-guides">Guides</a>
+    <a href="index.html#maintenance">Maintenance</a>
+    <a href="index.html#gear">Gear</a>
+    <a href="book.html">किताब (Book)</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </div>
 
   <div class="fine mono">NANDKISHOR BLOGS — FUJAIRAH / DUBAI, UAE</div>
-  <div class="fine mono" style="margin-top:14px;"><a href="privacy-policy.html" style="text-decoration:underline;">Privacy Policy</a></div>
 </footer>
 
 <script>
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  // Theme Toggle Engine
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const currentTheme = localStorage.getItem('nk_theme') || 'dark';
 
-  function slugify(text){
-    return text.toLowerCase().trim().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').slice(0,60);
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      themeIcon.textContent = '🌙';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      themeIcon.textContent = '☀️';
+    }
+    localStorage.setItem('nk_theme', theme);
   }
-  document.querySelectorAll('.post-body h2').forEach(h=>{
-    if(!h.id) h.id = slugify(h.textContent);
+  applyTheme(currentTheme);
+
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    applyTheme(isLight ? 'dark' : 'light');
   });
 
-  const tocEl = document.getElementById('toc');
-  const tocList = document.getElementById('toc-list');
-  const heads = document.querySelectorAll('.post-body h2');
-  if(heads.length){
-    heads.forEach(h=>{
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = '#' + h.id;
-      a.textContent = h.textContent;
-      a.addEventListener('click', (e)=>{
-        e.preventDefault();
-        h.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-      li.appendChild(a);
-      tocList.appendChild(li);
-    });
-    tocEl.classList.add('has-items');
+  // Mobile Drawer Toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const drawerBackdrop = document.getElementById('drawerBackdrop');
+
+  function toggleDrawer(open) {
+    const isOpen = open !== undefined ? open : !mobileDrawer.classList.contains('open');
+    mobileDrawer.classList.toggle('open', isOpen);
+    drawerBackdrop.classList.toggle('active', isOpen);
+    hamburgerBtn.classList.toggle('active', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
   }
 
-  const articleEl = document.querySelector('article.post');
-  const arc = document.getElementById('tacho-arc');
-  const needle = document.getElementById('tacho-needle');
-  const tacho = document.getElementById('tacho');
-  const ARC_LEN = 188;
+  hamburgerBtn.addEventListener('click', () => toggleDrawer());
+  drawerBackdrop.addEventListener('click', () => toggleDrawer(false));
 
-  function updateTacho(){
-    const rect = articleEl.getBoundingClientRect();
-    const total = articleEl.offsetHeight - window.innerHeight;
-    const scrolled = Math.min(Math.max(-rect.top, 0), total);
-    const progress = total > 0 ? scrolled / total : 0;
-    const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    tacho.classList.toggle('hidden', !inView);
-    arc.style.strokeDashoffset = ARC_LEN - (progress * ARC_LEN);
-    const angle = -90 + (progress * 180);
-    needle.setAttribute('transform', `rotate(${angle} 50 78)`);
-  }
-  window.addEventListener('scroll', updateTacho);
-  window.addEventListener('resize', updateTacho);
-  updateTacho();
+  // Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const docEl = document.documentElement;
+    const scrollTop = docEl.scrollTop || document.body.scrollTop;
+    const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    const bar = document.getElementById('reading-progress');
+    if (bar) bar.style.width = progress + '%';
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 </script>
 
 </body>
