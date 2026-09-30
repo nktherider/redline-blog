@@ -53,7 +53,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+</noscript>
 </head>
 <body>
 
@@ -82,7 +86,7 @@
 <header class="site">
   <div class="logo-wrap">
     <a href="#home" data-tab="home" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:inherit;">
-      <img src="logo-icon.png" alt="Nandkishor Sharma logo" class="logo-icon">
+      <img src="logo-icon.png" alt="Nandkishor Sharma logo" class="logo-icon" width="28" height="28" decoding="async">
       <div class="logo display">NANDKISHOR<span> BLOGS</span></div>
     </a>
   </div>
@@ -460,7 +464,7 @@
   <div id="tab-about" class="tab-view">
     <section id="about" class="post-grid" style="padding-top:40px;">
       <div class="card reveal about-card" style="grid-column:1/-1;">
-        <img src="about-photo.jpg" alt="Nandkishor Sharma with his KTM Adventure 1290R" class="about-photo">
+        <img src="about-photo.jpg" alt="Nandkishor Sharma with his KTM Adventure 1290R" class="about-photo" width="220" height="275" loading="lazy" decoding="async">
         <div>
           <span class="tag">About the Author</span>
           <h3>Written by a working rider, not a full-time blogger</h3>
