@@ -1133,3 +1133,37 @@ footer.site .fine {
   color: var(--steel);
   opacity: 0.7;
 }
+
+
+/* ===== Facebook Community Badge & Buttons ===== */
+.btn-fb {
+  border-color: #1877f2 !important;
+  color: #1877f2 !important;
+}
+.btn-fb:hover {
+  background: #1877f2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(24, 119, 242, 0.5) !important;
+}
+.community-card {
+  margin: 40px auto 28px;
+  padding: 26px 28px;
+  background: rgba(24, 119, 242, 0.05);
+  border: 1px solid rgba(24, 119, 242, 0.28);
+  border-radius: 10px;
+  text-align: center;
+}
+.community-card h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0;
+  letter-spacing: 0.5px;
+}
+.community-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.88;
+  max-width: 580px;
+  margin: 0 auto 18px;
+}
