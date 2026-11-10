@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Knockhill Racing Circuit perches high on the windswept hills of Fife, Scotland. At just 1.3 miles (2.09 km) in length, it is one of the shortest and most technical permanent motorsport circuits in the British Isles. It is also an unforgiving crucible for any motorcycle rider who mistakenly believes that fast road riding translates directly into circuit competence.</p>
 
@@ -190,7 +189,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

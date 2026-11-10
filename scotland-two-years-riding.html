@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Long before I ever threw a leg over a motorcycle in the United Arab Emirates, and years before carving the high-altitude sweepers of Jebel Jais or blasting across the sun-drenched desert tarmac of Emirates Road, my riding soul was forged in the wet, windswept wilderness of Scotland. Between 2015 and 2017, I spent two transformative years exploring the Scottish Highlands, the lowlands of Fife, and the Atlantic coastal fringes on two wheels.</p>
 
@@ -190,7 +189,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

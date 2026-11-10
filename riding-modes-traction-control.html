@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>A decade ago, straddling a 200-horsepower litre-class superbike or an open-class hyper-naked meant wrestling with pure mechanical aggression. A mechanical cable connected your right wrist directly to throttle butterflies, and the only traction control system in existence was the fine motor skills of your right hand. If you cracked the throttle too aggressively while leaned over on a cold tyre, or grabbed a fistful of front brake mid-corner in panic, the laws of physics asserted themselves brutally: you highsided over the handlebars or washed the front tyre into the scenery.</p>
 
@@ -193,7 +192,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

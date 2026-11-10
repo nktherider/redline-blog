@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Across the motorcycle community in the United Arab Emirates, there is an unwritten law known to every seasoned superbike and adventure rider: the magic window opens at 5:00 AM and slams shut by 8:30 AM. Outside of the mild mid-winter months, waiting until 9:00 AM to roll your bike out of the garage means subjecting yourself to searing 42°C heat, dense highway traffic, and baking asphalt that turns your protective leather gear into a mobile sauna.</p>
 
@@ -208,7 +207,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

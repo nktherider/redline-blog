@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>A 45-minute blast down the highway to an early morning coffee meet at Last Exit or a brisk sprint up the Dubai-Al Ain road rarely exposes ergonomic flaws or mechanical shortcuts. On short rides, you can easily ignore a stiff clutch lever, a slightly dry drive chain, a hard seat, or minor helmet wind buffeting. Your adrenaline masks physical discomfort, and your fuel tank never drops below half-full.</p>
 
@@ -199,7 +198,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

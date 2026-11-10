@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Walking into the gleaming flagship motorcycle showrooms along Dubai's Sheikh Zayed Road or through the industrial tuning hubs of Al Quoz is a sensory overload. Flanked by 215-horsepower Italian exotics in race-replica liveries, aerodynamic winglets, carbon fiber fairings, and digital TFT dashboards that resemble fighter jet cockpits, it is dangerously easy to let adrenaline override common sense. Almost every first-time buyer asks the identical question: <em>"Which litre-bike is the fastest, sharpest, and loudest machine I can finance?"</em></p>
 
@@ -197,7 +196,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

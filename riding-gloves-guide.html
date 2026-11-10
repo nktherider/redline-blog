@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Whenever a rider loses traction at 120 km/h on the highway or washes the front end on an early morning mountain bend, human anatomy has an involuntary, hardwired reflex: your hands fly out first to break the fall. In that split second, your entire body weight and forward momentum are transferred into a patch of leather and polymer smaller than an envelope.</p>
 
@@ -198,7 +197,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

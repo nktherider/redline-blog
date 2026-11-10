@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>When the Arabian summer pushes ambient temperatures above 44°C and asphalt surface temperatures on the Emirates Road or Sheikh Zayed Road soar past 65°C, riding a motorcycle transforms into an extreme thermal exercise. In this punishing climate, gear selection is not merely a matter of comfort; it directly dictates your cognitive focus, your reaction times, and whether you survive an unplanned dismount unscathed.</p>
 
@@ -200,7 +199,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

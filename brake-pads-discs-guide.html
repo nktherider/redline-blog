@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>On a modern litre-class superbike or heavyweight adventure tourer, your braking system is the single most critical safety mechanism standing between you and disaster. Accelerating to 160 km/h on an open stretch of Emirates Road requires nothing more than a twist of the right wrist; shedding that kinetic energy in an emergency or scrubbing off 80 km/h while setting up for a blind downhill hairpin on Jebel Jais requires flawless hydraulic and thermal performance from your calipers, pads, and rotors.</p>
 
@@ -190,7 +189,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

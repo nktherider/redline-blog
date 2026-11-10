@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Inside the alloy crankcases of a modern litre-class superbike or high-output adventure machine, internal combustion operates at the absolute edge of mechanical physics. Modern multi-cylinder engines rev beyond 14,000 RPM, producing piston speeds that rival Formula 1 machinery, while cylinder head temperatures easily exceed 220°C. In the middle of this mechanical furnace, only three specialized chemical compounds keep metal components from welding themselves into scrap: engine oil, radiator coolant, and hydraulic fluid.</p>
 
@@ -192,7 +191,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

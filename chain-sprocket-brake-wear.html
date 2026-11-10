@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Between the output shaft of your motorcycle's gearbox and the rear wheel contact patch lies the hardest-working mechanical link on the entire machine: the final drive chain and sprocket assembly. On a modern 1000cc superbike or high-torque adventure motorcycle, this continuous loop of steel pins, bushings, and rollers must transmit upwards of 200 horsepower and 140 Nm of torque across a spinning radius that turns more than 40 revolutions per second at highway cruising speeds.</p>
 
@@ -205,7 +204,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Riding a high-performance motorcycle through an Arabian Gulf summer is unlike riding in any other environment on earth. When the calendar flips past May in Dubai, ambient afternoon temperatures routinely push beyond 45°C to 48°C, and asphalt surface temperatures on the Emirates Road (E611) or Sheikh Zayed Road (E11) easily exceed 65°C. At these extreme thermal thresholds, the atmospheric air entering your engine intake and blowing across your radiator core is hotter than human body temperature (37°C).</p>
 
@@ -230,7 +229,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

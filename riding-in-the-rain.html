@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>Across the United Kingdom, northern Europe, or the Pacific Northwest, riding a motorcycle in the rain is a routine fact of daily commuting. In those temperate climates, frequent weekly precipitation keeps road surfaces continuously washed clean of accumulated traffic grime. In the United Arab Emirates, however, precipitation is a rare, dramatic event — occurring only a handful of times during the winter months between December and March.</p>
 
@@ -193,7 +192,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 

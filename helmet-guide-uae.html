@@ -131,7 +131,6 @@
         <span class="copy-tooltip mono">Copied!</span>
       </div>
     </div>
-      </div>
       <div class="post-body reveal">
         <p>A helmet spec sheet is mostly marketing noise unless you understand how specific design choices hold up against the punishing realities of riding in the UAE. When ambient temperature hovers around 45°C, high humidity blankets the coast, and highway crosswinds blast sand across the Dubai-Al Ain highway, the difference between a mediocre helmet and a properly engineered lid is not comfort — it is mental endurance and survival.</p>
 
@@ -195,7 +194,10 @@
 </main>
 
 <aside id="toc" aria-label="On this page">
-  <div class="toc-label mono">On This Page</div>
+  <div class="toc-header">
+    <div class="toc-label mono">On This Page</div>
+    <button class="toc-close-btn" onclick="document.getElementById('toc').classList.add('closed')" title="Close table of contents" aria-label="Close">✕</button>
+  </div>
   <ul id="toc-list"></ul>
 </aside>
 
