@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free UAE &amp; Gulf ATS CV Builder — Nandkishor Sharma | Instant PDF</title>
+<meta name="description" content="Build a 100% Gulf ATS-compliant CV for Dubai, Abu Dhabi &amp; UAE jobs. Free live preview, ATS score checker, and instant download. Created by UAE HR professionals.">
+<link rel="canonical" href="https://www.nandkishorsharma.com/cv-builder.html">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon-180.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Rajdhani:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== CV Builder Dedicated Styles ===== */
+:root {
+  --cv-bg: #f8fafc;
+  --cv-paper: #ffffff;
+  --cv-text: #0f172a;
+  --cv-muted: #475569;
+  --cv-primary: #0284c7;
+  --cv-border: #cbd5e1;
+  --cv-accent: #d81e2c;
+}
+
+[data-theme="light"] {
+  --cv-bg: #f1f5f9;
+  --cv-paper: #ffffff;
+  --cv-text: #0f172a;
+}
+
+.builder-header {
+  padding: 30px 24px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.builder-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.builder-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+.builder-subtitle {
+  font-size: 15px;
+  color: var(--silver);
+  max-width: 680px;
+  margin: 0 auto 18px;
+  line-height: 1.5;
+}
+
+/* Score Banner */
+.score-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--asphalt-2);
+  border: 1px solid var(--line-highlight);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.score-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.score-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: conic-gradient(#10b981 calc(var(--score, 60) * 1%), var(--line) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.score-circle::after {
+  content: attr(data-score) "%";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--asphalt-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--white);
+}
+
+.score-info h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--white);
+}
+
+.score-info p {
+  font-size: 13px;
+  color: var(--steel);
+  margin: 0;
+}
+
+.score-tips {
+  font-size: 12.5px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* Two-column Layout */
+.builder-workspace {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+@media(max-width: 1024px) {
+  .builder-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Styles */
+.form-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-title:first-child {
+  margin-top: 0;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+@media(max-width: 600px) {
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-group.full {
+  grid-column: 1 / -1;
+}
+
+.field-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--steel);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.field-input, .field-select, .field-textarea {
+  background: var(--asphalt);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.field-input:focus, .field-select:focus, .field-textarea:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px var(--red-glow);
+}
+
+.field-textarea {
+  min-height: 85px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Preset Chips */
+.chips-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0 14px;
+}
+
+.chip-btn {
+  background: var(--asphalt-2);
+  border: 1px solid var(--line-highlight);
+  color: var(--silver);
+  font-size: 11.5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.chip-btn:hover {
+  border-color: var(--red);
+  color: var(--white);
+}
+
+/* Dynamic Entries (Jobs / Education) */
+.repeater-item {
+  background: var(--asphalt-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.repeater-del-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--steel);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.repeater-del-btn:hover {
+  color: var(--red);
+}
+
+.add-entry-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px dashed var(--line-highlight);
+  color: var(--silver);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+
+.add-entry-btn:hover {
+  border-color: var(--red);
+  color: var(--white);
+  background: rgba(216, 30, 44, 0.05);
+}
+
+/* Action Controls */
+.controls-bar {
+  position: sticky;
+  top: 80px;
+  z-index: 30;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.theme-selector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--steel);
+}
+
+.theme-pill {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--asphalt);
+  border: 1px solid var(--line);
+  color: var(--silver);
+  cursor: pointer;
+  font-size: 11.5px;
+}
+
+.theme-pill.active {
+  border-color: var(--red);
+  color: var(--white);
+  background: rgba(216, 30, 44, 0.15);
+}
+
+.btn-action-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-print {
+  background: #10b981;
+  border: 1px solid #10b981;
+  color: #fff;
+  padding: 8px 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btn-print:hover {
+  background: #059669;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn-premium {
+  background: linear-gradient(135deg, #d81e2c, #f59e0b);
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btn-premium:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 14px rgba(216, 30, 44, 0.5);
+}
+
+/* Paper Preview (A4 Paper Representation) */
+.preview-container {
+  position: sticky;
+  top: 150px;
+}
+
+.a4-sheet {
+  background: #ffffff;
+  color: #0f172a;
+  padding: 40px 42px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  min-height: 840px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.2s;
+}
+
+/* CV Layout Formats */
+.cv-header {
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.cv-name {
+  font-size: 22pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #0f172a;
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.cv-target {
+  font-size: 12pt;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 9.5pt;
+  color: #475569;
+}
+
+.cv-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cv-pill {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cv-section {
+  margin-bottom: 16px;
+}
+
+.cv-section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-summary-text {
+  font-size: 9.5pt;
+  color: #334155;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.cv-job {
+  margin-bottom: 12px;
+}
+
+.cv-job-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.cv-job-title {
+  font-weight: 700;
+  font-size: 10.5pt;
+  color: #0f172a;
+}
+
+.cv-job-company {
+  font-weight: 600;
+  font-size: 10pt;
+  color: #475569;
+}
+
+.cv-job-date {
+  font-size: 9pt;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cv-bullets {
+  margin: 4px 0 0 16px;
+  padding: 0;
+  font-size: 9.5pt;
+  color: #334155;
+  line-height: 1.45;
+}
+
+.cv-bullets li {
+  margin-bottom: 4px;
+}
+
+.cv-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cv-skill-tag {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 9pt;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+/* Premium Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-backdrop.active {
+  display: flex;
+}
+
+.modal-card {
+  background: var(--surface);
+  border: 1px solid var(--line-highlight);
+  border-radius: 14px;
+  max-width: 540px;
+  width: 100%;
+  padding: 28px;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: var(--steel);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-price-tag {
+  display: inline-block;
+  background: rgba(216, 30, 44, 0.15);
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin: 12px 0 16px;
+}
+
+.modal-perks {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+  font-size: 14px;
+  color: var(--silver);
+  line-height: 1.8;
+}
+
+.modal-perks li::before {
+  content: "✓ ";
+  color: #10b981;
+  font-weight: 700;
+}
+
+.modal-cta-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.modal-cta-btn:hover {
+  background: #166fe5;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  header.site, footer.site, .builder-header, .form-panel, .controls-bar, .score-card, #reading-progress, .mobile-drawer, .mobile-drawer-backdrop {
+    display: none !important;
+  }
+  .builder-workspace {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .preview-container {
+    position: static !important;
+  }
+  .a4-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 20mm !important;
+    width: 100% !important;
+    min-height: auto !important;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="logo-wrap">
+    <a href="index.html" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:inherit;">
+      <img src="logo-icon.png" alt="Nandkishor Sharma logo" class="logo-icon" width="28" height="28" decoding="async">
+      <div class="logo display">NANDKISHOR<span> CAREERS</span></div>
+    </a>
+  </div>
+
+  <div class="header-right">
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv-builder.html" style="color:var(--red);font-weight:700;">CV Builder 📄</a></li>
+        <li><a href="motorcycle-registration-passing-dubai.html">RTA Passing</a></li>
+        <li><a href="about.html">About Author</a></li>
+        <li><a href="https://www.facebook.com/share/1EFazZHqvh/" target="_blank" rel="noopener">15K+ FB Community</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dark/Light Theme Toggle -->
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+      <span id="themeIcon">☀️</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- Builder Header -->
+  <section class="builder-header">
+    <div class="builder-hero-badge">🇦🇪 100% UAE ATS Compliant Engine</div>
+    <h1 class="builder-title">Free UAE &amp; Gulf ATS Resume Builder</h1>
+    <p class="builder-subtitle">Engineered by UAE HR professionals. Formatted strictly for Taleo, Workday, and Gulf recruiter scanning systems. Real-time preview, live score, and instant PDF download.</p>
+
+    <!-- Score Card -->
+    <div class="score-card">
+      <div class="score-left">
+        <div class="score-circle" id="scoreCircle" data-score="65" style="--score: 65;"></div>
+        <div class="score-info">
+          <h4 id="scoreTitle">ATS Score: 65% — Good Start</h4>
+          <p id="scoreDesc">Complete the essential UAE sections to reach 90%+ readiness.</p>
+        </div>
+      </div>
+      <div class="score-tips" id="scoreTip">
+        💡 Tip: Add your UAE Driving License status — over 60% of Gulf recruiters filter by license!
+      </div>
+    </div>
+  </section>
+
+  <!-- Workspace Grid -->
+  <div class="builder-workspace">
+    
+    <!-- LEFT: Form Inputs -->
+    <div class="form-panel">
+      
+      <!-- Section 1 -->
+      <div class="section-title">
+        <span>👤</span> 1. Contact &amp; Gulf Essentials
+      </div>
+
+      <div class="field-grid">
+        <div class="field-group">
+          <label class="field-label" for="inpName">Full Name *</label>
+          <input type="text" id="inpName" class="field-input" placeholder="e.g. Rahul Sharma" value="Rahul Sharma">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpTitle">Target Job Title *</label>
+          <input type="text" id="inpTitle" class="field-input" placeholder="e.g. Senior Sales Executive" value="Senior Sales Executive">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpEmail">Email Address *</label>
+          <input type="email" id="inpEmail" class="field-input" placeholder="rahul.sharma@email.com" value="rahul.sharma@email.com">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpPhone">Phone / WhatsApp (With Country Code) *</label>
+          <input type="tel" id="inpPhone" class="field-input" placeholder="+971 50 123 4567" value="+971 50 123 4567">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpLocation">Current Location *</label>
+          <input type="text" id="inpLocation" class="field-input" placeholder="Dubai, UAE (or Mumbai, India)" value="Dubai, United Arab Emirates">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpVisa">UAE Visa Status *</label>
+          <select id="inpVisa" class="field-select">
+            <option value="Visit / Tourist Visa (Immediate Joiner)">Visit / Tourist Visa (Immediate Joiner)</option>
+            <option value="Employment Visa (Notice Period)">Employment Visa (Notice Period)</option>
+            <option value="Freelance / Green Visa">Freelance / Green Visa</option>
+            <option value="Golden Visa (10-Year)">Golden Visa (10-Year)</option>
+            <option value="In Home Country (Ready to Relocate)">In Home Country (Ready to Relocate)</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpLicense">UAE Driving License *</label>
+          <select id="inpLicense" class="field-select">
+            <option value="Valid UAE Driving License (Light Vehicle)">Valid UAE Driving License (Light Vehicle)</option>
+            <option value="UAE Motorcycle License">UAE Motorcycle License</option>
+            <option value="International / Home Country License">International / Home Country License</option>
+            <option value="No UAE License">No UAE License</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="inpLinkedIn">LinkedIn / Portfolio URL</label>
+          <input type="text" id="inpLinkedIn" class="field-input" placeholder="linkedin.com/in/rahulsharma" value="linkedin.com/in/rahulsharma">
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section-title">
+        <span>📝</span> 2. Professional Summary
+      </div>
+      <div class="chips-row">
+        <span class="chip-btn" onclick="insertSummaryPreset('sales')">+ Sales &amp; Retail</span>
+        <span class="chip-btn" onclick="insertSummaryPreset('admin')">+ HR &amp; Admin</span>
+        <span class="chip-btn" onclick="insertSummaryPreset('driver')">+ Driver / Logistics</span>
+        <span class="chip-btn" onclick="insertSummaryPreset('tech')">+ IT &amp; Engineering</span>
+        <span class="chip-btn" onclick="insertSummaryPreset('hospitality')">+ Hospitality / Customer Service</span>
+      </div>
+      <div class="field-group full">
+        <textarea id="inpSummary" class="field-textarea" rows="4">Results-driven Sales Professional with 5+ years of experience in high-volume retail and B2B sales across Dubai and India. Proven track record of exceeding quarterly targets by 28% and managing client portfolios exceeding 1.2M AED. Fluent in English and Hindi with valid UAE Driving License and immediate joining capability.</textarea>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section-title">
+        <span>💼</span> 3. Work Experience (Gulf Standard)
+      </div>
+      <div id="jobsList">
+        <!-- Rendered dynamically -->
+      </div>
+      <button type="button" class="add-entry-btn" onclick="addJobEntry()">+ Add Another Job Position</button>
+
+      <!-- Section 4 -->
+      <div class="section-title">
+        <span>⚡</span> 4. Core Skills &amp; Competencies
+      </div>
+      <div class="chips-row">
+        <span class="chip-btn" onclick="addSkillTag('UAE Labor Law')">+ UAE Labor Law</span>
+        <span class="chip-btn" onclick="addSkillTag('B2B Sales')">+ B2B Sales</span>
+        <span class="chip-btn" onclick="addSkillTag('CRM / Salesforce')">+ CRM / Salesforce</span>
+        <span class="chip-btn" onclick="addSkillTag('P&L Management')">+ P&amp;L Management</span>
+        <span class="chip-btn" onclick="addSkillTag('Client Relationship')">+ Client Relationship</span>
+        <span class="chip-btn" onclick="addSkillTag('Inventory Control')">+ Inventory Control</span>
+        <span class="chip-btn" onclick="addSkillTag('ERP Systems')">+ ERP Systems</span>
+      </div>
+      <div class="field-group full">
+        <input type="text" id="inpSkills" class="field-input" placeholder="Comma-separated: B2B Sales, CRM, Negotiation, Account Management" value="B2B Sales, Client Acquisition, CRM (Salesforce), Revenue Growth, Contract Negotiation, Team Leadership, Territory Management">
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section-title">
+        <span>🎓</span> 5. Education &amp; Certifications
+      </div>
+      <div id="eduList">
+        <!-- Rendered dynamically -->
+      </div>
+      <button type="button" class="add-entry-btn" onclick="addEduEntry()">+ Add Another Degree / Certification</button>
+
+      <!-- Section 6 -->
+      <div class="section-title">
+        <span>🌐</span> 6. Languages
+      </div>
+      <div class="field-group full">
+        <input type="text" id="inpLanguages" class="field-input" placeholder="e.g. English (Fluent), Hindi (Native), Arabic (Basic)" value="English (Fluent), Hindi (Native), Arabic (Conversational / Basic)">
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Controls & Live A4 Preview -->
+    <div class="preview-panel">
+      
+      <!-- Top Action Bar -->
+      <div class="controls-bar">
+        <div class="theme-selector">
+          <span>Theme:</span>
+          <button type="button" class="theme-pill active" onclick="setResumeTheme('classic', this)">Gulf ATS</button>
+          <button type="button" class="theme-pill" onclick="setResumeTheme('modern', this)">Dubai Navy</button>
+        </div>
+        <div class="btn-action-group">
+          <button type="button" class="btn-print" onclick="window.print()">🖨️ Download Clean PDF (Free)</button>
+          <button type="button" class="btn-premium" onclick="openPremiumModal()">⭐ Unlock AI &amp; Pro (₹99 / 5 AED)</button>
+        </div>
+      </div>
+
+      <!-- Live A4 Sheet Preview -->
+      <div class="preview-container">
+        <div class="a4-sheet" id="resumePreview">
+          
+          <!-- Header -->
+          <div class="cv-header">
+            <h2 class="cv-name" id="prevName">RAHUL SHARMA</h2>
+            <div class="cv-target" id="prevTitle">SENIOR SALES EXECUTIVE</div>
+            <div class="cv-contacts">
+              <span class="cv-contact-item">📧 <span id="prevEmail">rahul.sharma@email.com</span></span>
+              <span>•</span>
+              <span class="cv-contact-item">📱 <span id="prevPhone">+971 50 123 4567</span></span>
+              <span>•</span>
+              <span class="cv-contact-item">📍 <span id="prevLocation">Dubai, United Arab Emirates</span></span>
+              <span>•</span>
+              <span class="cv-pill" id="prevVisa">Visa: Visit / Tourist Visa (Immediate Joiner)</span>
+              <span>•</span>
+              <span class="cv-pill" id="prevLicense">License: Valid UAE Driving License</span>
+              <span>•</span>
+              <span class="cv-contact-item" id="prevLinkedInWrap">🔗 <span id="prevLinkedIn">linkedin.com/in/rahulsharma</span></span>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="cv-section">
+            <div class="cv-section-title">Professional Summary</div>
+            <p class="cv-summary-text" id="prevSummary">
+              Results-driven Sales Professional with 5+ years of experience in high-volume retail and B2B sales across Dubai and India. Proven track record of exceeding quarterly targets by 28% and managing client portfolios exceeding 1.2M AED. Fluent in English and Hindi with valid UAE Driving License and immediate joining capability.
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div class="cv-section">
+            <div class="cv-section-title">Core Competencies &amp; Technical Skills</div>
+            <div class="cv-skills-grid" id="prevSkills">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="cv-section">
+            <div class="cv-section-title">Professional Work Experience</div>
+            <div id="prevJobs">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="cv-section">
+            <div class="cv-section-title">Education &amp; Certifications</div>
+            <div id="prevEdu">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="cv-section">
+            <div class="cv-section-title">Languages Known</div>
+            <p class="cv-summary-text" id="prevLanguages">English (Fluent), Hindi (Native), Arabic (Conversational / Basic)</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Premium Upgrade Modal -->
+<div class="modal-backdrop" id="premiumModal">
+  <div class="modal-card">
+    <button class="modal-close-btn" onclick="closePremiumModal()">✕</button>
+    <div style="font-size:32px;margin-bottom:8px;">🌟</div>
+    <h3 style="font-family:'Rajdhani',sans-serif;font-size:24px;margin:0 0 6px;color:var(--white);">Unlock Gulf Executive ATS Bundle</h3>
+    <p style="font-size:14px;color:var(--steel);margin:0;">Reviewed &amp; formatted to pass UAE HR applicant tracking systems on the 1st attempt.</p>
+    
+    <div class="modal-price-tag">Special Launch Offer: ₹99 / 5 AED Only</div>
+
+    <ul class="modal-perks">
+      <li><strong>AI Bullet Polish:</strong> Auto-rewrite duties into powerful metric-driven achievements.</li>
+      <li><strong>3 Gulf Executive Formats:</strong> Luxury Corporate, Dubai Executive, Modern Minimalist.</li>
+      <li><strong>Free Dubai Cover Letter:</strong> Pre-written email pitch to UAE HR managers.</li>
+      <li><strong>100% Unlocked PDF:</strong> High-res vector download with zero watermarks.</li>
+      <li><strong>Direct WhatsApp Consultation:</strong> Get quick tips from Nandkishor Sharma's team.</li>
+    </ul>
+
+    <a href="https://wa.me/971501234567?text=Hi%20Nandkishor%20Bhai,%20I%20want%20to%20unlock%20the%20Premium%20Gulf%20ATS%20CV%20and%20Cover%20Letter%20bundle%20(99%20INR%20/%205%20AED)" target="_blank" rel="noopener" class="modal-cta-btn">
+      <span>💬</span> Pay via UPI / GPay / Card &amp; Unlock Instant (₹99 / 5 AED)
+    </a>
+    <p style="font-size:11.5px;color:var(--steel);margin-top:12px;">Instant Delivery on WhatsApp &amp; Email within 2 minutes.</p>
+  </div>
+</div>
+
+<footer class="site">
+  <h2 class="display">Nandkishor Careers &amp; Rider Hub</h2>
+  <p>Helping professionals and riders navigate life, careers, and the roads of the United Arab Emirates.</p>
+  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:20px;">
+    <a class="btn btn-fb" href="https://www.facebook.com/share/1EFazZHqvh/" target="_blank" rel="noopener" style="margin-top:0;">Join 15k+ on Facebook →</a>
+    <a class="btn" href="https://instagram.com/nk.rider.eats" target="_blank" rel="noopener" style="margin-top:0;">Follow @nk.rider.eats →</a>
+  </div>
+
+  <div class="footer-nav-links">
+    <a href="index.html">Home</a>
+    <a href="cv-builder.html">CV Builder</a>
+    <a href="motorcycle-registration-passing-dubai.html">RTA Passing</a>
+    <a href="about.html">About Author</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </div>
+
+  <div class="fine mono">NANDKISHOR BLOGS &amp; CAREERS — DUBAI &amp; FUJAIRAH, UAE</div>
+</footer>
+
+<script>
+// State Management
+const resumeData = {
+  name: "Rahul Sharma",
+  title: "Senior Sales Executive",
+  email: "rahul.sharma@email.com",
+  phone: "+971 50 123 4567",
+  location: "Dubai, United Arab Emirates",
+  visa: "Visit / Tourist Visa (Immediate Joiner)",
+  license: "Valid UAE Driving License (Light Vehicle)",
+  linkedin: "linkedin.com/in/rahulsharma",
+  summary: "Results-driven Sales Professional with 5+ years of experience in high-volume retail and B2B sales across Dubai and India. Proven track record of exceeding quarterly targets by 28% and managing client portfolios exceeding 1.2M AED. Fluent in English and Hindi with valid UAE Driving License and immediate joining capability.",
+  skills: ["B2B Sales", "Client Acquisition", "CRM (Salesforce)", "Revenue Growth", "Contract Negotiation", "Team Leadership", "Territory Management"],
+  languages: "English (Fluent), Hindi (Native), Arabic (Conversational / Basic)",
+  jobs: [
+    {
+      title: "Senior Sales Executive",
+      company: "Gulf Retail & Distribution LLC",
+      location: "Dubai, UAE",
+      date: "Jan 2023 – Present",
+      bullets: [
+        "Managed a portfolio of 45+ B2B commercial accounts across Dubai and the Northern Emirates, generating over 1.8M AED in annual sales.",
+        "Negotiated annual supply agreements, increasing client retention by 22% over a 14-month cycle.",
+        "Collaborated with logistics and warehousing teams to ensure 99.2% on-time order fulfillment."
+      ]
+    },
+    {
+      title: "Sales Specialist",
+      company: "Apex Consumer Goods",
+      location: "Mumbai, India",
+      date: "Jun 2020 – Dec 2022",
+      bullets: [
+        "Consistently exceeded quarterly sales quotas by an average of 18%, receiving 'Top Performer Award' for Q3 2021.",
+        "Prospected and onboarded 60+ new retail distributor accounts within primary metropolitan territory."
+      ]
+    }
+  ],
+  education: [
+    {
+      degree: "Bachelor of Business Administration (BBA) — Marketing",
+      institution: "University of Mumbai",
+      year: "2017 – 2020"
+    }
+  ]
+};
+
+// Preset Summaries for 1-Click Injection
+const presets = {
+  sales: "Results-driven Sales Professional with 5+ years of experience in B2B and retail sales across UAE & India. Proven record of exceeding targets by 25%+ and managing high-value client accounts. Holding a valid UAE Driving License and ready to join immediately.",
+  admin: "Meticulous HR & Administrative Specialist with 6+ years managing onboarding, employee relations, visa processing, and UAE Labor Law compliance. Adept in ERP systems, payroll reconciliation, and executive correspondence with immediate availability.",
+  driver: "Professional & Safe Light Vehicle Driver with 4+ years of clean UAE driving history. Deep knowledge of Dubai, Sharjah, and Abu Dhabi routes, navigation apps, and defensive driving protocols. Valid UAE Driving License with clean record.",
+  tech: "Full-Stack Software Engineer with 4+ years building scalable web architectures and REST APIs. Proficient in JavaScript, React, Node.js, and cloud deployments. Strong problem solver with experience working with international agile teams.",
+  hospitality: "Customer-focused Hospitality & Front Desk Executive with 4+ years delivering 5-star guest services across Dubai hotels and dining establishments. Experienced in POS systems, reservations, and dispute resolution with fluent English and Hindi."
+};
+
+function insertSummaryPreset(key) {
+  if (presets[key]) {
+    document.getElementById('inpSummary').value = presets[key];
+    resumeData.summary = presets[key];
+    updatePreview();
+  }
+}
+
+function addSkillTag(tag) {
+  const inp = document.getElementById('inpSkills');
+  const current = inp.value.split(',').map(s => s.trim()).filter(Boolean);
+  if (!current.includes(tag)) {
+    current.push(tag);
+    inp.value = current.join(', ');
+    resumeData.skills = current;
+    updatePreview();
+  }
+}
+
+// Render Input Repeaters
+function renderJobInputs() {
+  const container = document.getElementById('jobsList');
+  container.innerHTML = '';
+  resumeData.jobs.forEach((job, idx) => {
+    const div = document.createElement('div');
+    div.className = 'repeater-item';
+    div.innerHTML = `
+      <button type="button" class="repeater-del-btn" onclick="removeJobEntry(${idx})" title="Delete job">✕</button>
+      <div class="field-grid">
+        <div class="field-group">
+          <label class="field-label">Job Title *</label>
+          <input type="text" class="field-input" value="${job.title}" oninput="updateJobField(${idx}, 'title', this.value)">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Company Name *</label>
+          <input type="text" class="field-input" value="${job.company}" oninput="updateJobField(${idx}, 'company', this.value)">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Location (e.g. Dubai, UAE)</label>
+          <input type="text" class="field-input" value="${job.location}" oninput="updateJobField(${idx}, 'location', this.value)">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Date Range (e.g. Jan 2022 – Present)</label>
+          <input type="text" class="field-input" value="${job.date}" oninput="updateJobField(${idx}, 'date', this.value)">
+        </div>
+        <div class="field-group full">
+          <label class="field-label">Key Achievements (1 per line)</label>
+          <textarea class="field-textarea" rows="3" oninput="updateJobBullets(${idx}, this.value)">${job.bullets.join('\n')}</textarea>
+        </div>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function renderEduInputs() {
+  const container = document.getElementById('eduList');
+  container.innerHTML = '';
+  resumeData.education.forEach((edu, idx) => {
+    const div = document.createElement('div');
+    div.className = 'repeater-item';
+    div.innerHTML = `
+      <button type="button" class="repeater-del-btn" onclick="removeEduEntry(${idx})" title="Delete education">✕</button>
+      <div class="field-grid">
+        <div class="field-group full">
+          <label class="field-label">Degree / Diploma / Certification *</label>
+          <input type="text" class="field-input" value="${edu.degree}" oninput="updateEduField(${idx}, 'degree', this.value)">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Institution / University</label>
+          <input type="text" class="field-input" value="${edu.institution}" oninput="updateEduField(${idx}, 'institution', this.value)">
+        </div>
+        <div class="field-group">
+          <label class="field-label">Year Completed</label>
+          <input type="text" class="field-input" value="${edu.year}" oninput="updateEduField(${idx}, 'year', this.value)">
+        </div>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function addJobEntry() {
+  resumeData.jobs.push({
+    title: "Position Title",
+    company: "Company Name",
+    location: "Dubai, UAE",
+    date: "2021 – 2023",
+    bullets: ["Managed core operations and delivered measurable outcomes for business."]
+  });
+  renderJobInputs();
+  updatePreview();
+}
+
+function removeJobEntry(idx) {
+  if (resumeData.jobs.length > 1) {
+    resumeData.jobs.splice(idx, 1);
+    renderJobInputs();
+    updatePreview();
+  }
+}
+
+function updateJobField(idx, field, val) {
+  resumeData.jobs[idx][field] = val;
+  updatePreview();
+}
+
+function updateJobBullets(idx, val) {
+  resumeData.jobs[idx].bullets = val.split('\n').filter(b => b.trim().length > 0);
+  updatePreview();
+}
+
+function addEduEntry() {
+  resumeData.education.push({
+    degree: "Certification / Degree",
+    institution: "Institute Name",
+    year: "2022"
+  });
+  renderEduInputs();
+  updatePreview();
+}
+
+function removeEduEntry(idx) {
+  if (resumeData.education.length > 1) {
+    resumeData.education.splice(idx, 1);
+    renderEduInputs();
+    updatePreview();
+  }
+}
+
+function updateEduField(idx, field, val) {
+  resumeData.education[idx][field] = val;
+  updatePreview();
+}
+
+// Live Preview Update Engine
+function updatePreview() {
+  document.getElementById('prevName').textContent = resumeData.name.toUpperCase() || 'YOUR NAME';
+  document.getElementById('prevTitle').textContent = resumeData.title.toUpperCase() || 'TARGET ROLE';
+  document.getElementById('prevEmail').textContent = resumeData.email || 'your.email@example.com';
+  document.getElementById('prevPhone').textContent = resumeData.phone || '+971 50 000 0000';
+  document.getElementById('prevLocation').textContent = resumeData.location || 'Dubai, UAE';
+  document.getElementById('prevVisa').textContent = 'Visa: ' + resumeData.visa;
+  document.getElementById('prevLicense').textContent = 'License: ' + resumeData.license;
+  
+  const linkedinWrap = document.getElementById('prevLinkedInWrap');
+  if (resumeData.linkedin) {
+    linkedinWrap.style.display = 'inline-flex';
+    document.getElementById('prevLinkedIn').textContent = resumeData.linkedin;
+  } else {
+    linkedinWrap.style.display = 'none';
+  }
+
+  document.getElementById('prevSummary').textContent = resumeData.summary || 'Professional summary outlining your career achievements, certifications, and availability in the UAE.';
+
+  // Skills
+  const skillsContainer = document.getElementById('prevSkills');
+  skillsContainer.innerHTML = '';
+  resumeData.skills.forEach(s => {
+    if (s.trim()) {
+      const span = document.createElement('span');
+      span.className = 'cv-skill-tag';
+      span.textContent = s.trim();
+      skillsContainer.appendChild(span);
+    }
+  });
+
+  // Experience
+  const jobsContainer = document.getElementById('prevJobs');
+  jobsContainer.innerHTML = '';
+  resumeData.jobs.forEach(j => {
+    const jDiv = document.createElement('div');
+    jDiv.className = 'cv-job';
+    jDiv.innerHTML = `
+      <div class="cv-job-top">
+        <span class="cv-job-title">${j.title} — <span class="cv-job-company">${j.company}</span></span>
+        <span class="cv-job-date">${j.location} | ${j.date}</span>
+      </div>
+      <ul class="cv-bullets">
+        ${j.bullets.map(b => `<li>${b}</li>`).join('')}
+      </ul>
+    `;
+    jobsContainer.appendChild(jDiv);
+  });
+
+  // Education
+  const eduContainer = document.getElementById('prevEdu');
+  eduContainer.innerHTML = '';
+  resumeData.education.forEach(e => {
+    const eDiv = document.createElement('div');
+    eDiv.className = 'cv-job';
+    eDiv.innerHTML = `
+      <div class="cv-job-top">
+        <span class="cv-job-title">${e.degree}</span>
+        <span class="cv-job-date">${e.year}</span>
+      </div>
+      <div style="font-size:9.5pt;color:#475569;">${e.institution}</div>
+    `;
+    eduContainer.appendChild(eDiv);
+  });
+
+  // Languages
+  document.getElementById('prevLanguages').textContent = resumeData.languages;
+
+  calculateScore();
+}
+
+// Calculate ATS Compliance Score
+function calculateScore() {
+  let score = 20;
+  if (resumeData.name && resumeData.name.length > 2) score += 10;
+  if (resumeData.email && resumeData.email.includes('@')) score += 10;
+  if (resumeData.phone && resumeData.phone.length > 8) score += 10;
+  if (resumeData.visa && !resumeData.visa.includes('Select')) score += 15;
+  if (resumeData.license && resumeData.license.includes('UAE')) score += 10;
+  if (resumeData.summary && resumeData.summary.length > 80) score += 15;
+  if (resumeData.skills.length >= 5) score += 10;
+
+  const circle = document.getElementById('scoreCircle');
+  circle.setAttribute('data-score', score);
+  circle.style.setProperty('--score', score);
+
+  const titleEl = document.getElementById('scoreTitle');
+  const descEl = document.getElementById('scoreDesc');
+  const tipEl = document.getElementById('scoreTip');
+
+  if (score >= 90) {
+    titleEl.textContent = `ATS Score: ${score}% — UAE Recruiter Ready! 🔥`;
+    descEl.textContent = "Your resume meets top Gulf ATS parsing benchmarks.";
+    tipEl.textContent = "✅ Excellent: All required UAE fields and quantified impact metrics are present.";
+  } else if (score >= 70) {
+    titleEl.textContent = `ATS Score: ${score}% — Strong Foundation 👍`;
+    descEl.textContent = "Add 2-3 more quantifiable achievements to push your score to 90%+";
+    tipEl.textContent = "💡 Tip: Include numbers, AED currency, or percentages in your job bullets.";
+  } else {
+    titleEl.textContent = `ATS Score: ${score}% — Incomplete ⚠️`;
+    descEl.textContent = "Gulf ATS filters require clear visa and license status.";
+    tipEl.textContent = "💡 Tip: Make sure your contact details and UAE visa status are completed.";
+  }
+}
+
+// Theme switch
+function setResumeTheme(theme, btn) {
+  document.querySelectorAll('.theme-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const sheet = document.getElementById('resumePreview');
+  if (theme === 'modern') {
+    sheet.style.borderTop = '5px solid #2563eb';
+    document.querySelectorAll('.cv-section-title').forEach(t => t.style.color = '#1e40af');
+  } else {
+    sheet.style.borderTop = 'none';
+    document.querySelectorAll('.cv-section-title').forEach(t => t.style.color = '#0f172a');
+  }
+}
+
+// Modal controls
+function openPremiumModal() {
+  document.getElementById('premiumModal').classList.add('active');
+}
+
+function closePremiumModal() {
+  document.getElementById('premiumModal').classList.remove('active');
+}
+
+// Event Listeners for Base Inputs
+document.getElementById('inpName').addEventListener('input', e => { resumeData.name = e.target.value; updatePreview(); });
+document.getElementById('inpTitle').addEventListener('input', e => { resumeData.title = e.target.value; updatePreview(); });
+document.getElementById('inpEmail').addEventListener('input', e => { resumeData.email = e.target.value; updatePreview(); });
+document.getElementById('inpPhone').addEventListener('input', e => { resumeData.phone = e.target.value; updatePreview(); });
+document.getElementById('inpLocation').addEventListener('input', e => { resumeData.location = e.target.value; updatePreview(); });
+document.getElementById('inpVisa').addEventListener('change', e => { resumeData.visa = e.target.value; updatePreview(); });
+document.getElementById('inpLicense').addEventListener('change', e => { resumeData.license = e.target.value; updatePreview(); });
+document.getElementById('inpLinkedIn').addEventListener('input', e => { resumeData.linkedin = e.target.value; updatePreview(); });
+document.getElementById('inpSummary').addEventListener('input', e => { resumeData.summary = e.target.value; updatePreview(); });
+document.getElementById('inpSkills').addEventListener('input', e => {
+  resumeData.skills = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
+  updatePreview();
+});
+document.getElementById('inpLanguages').addEventListener('input', e => { resumeData.languages = e.target.value; updatePreview(); });
+
+// Initial Boot
+renderJobInputs();
+renderEduInputs();
+updatePreview();
+</script>
+
+</body>
+</html>
