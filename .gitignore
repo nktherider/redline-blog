@@ -10,3 +10,6 @@ $RECYCLE.BIN/
 .idea/
 *.swp
 *.bak
+
+# Dependencies
+node_modules/
