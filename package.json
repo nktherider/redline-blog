@@ -1,0 +1,23 @@
+{
+  "name": "nandkishor-blog",
+  "version": "1.0.0",
+  "description": "Nandkishor Blogs - Superbike riding guides, gear reviews, and Dubai routes",
+  "scripts": {
+    "dev": "echo \"Static HTML site - open index.html in browser\"",
+    "build": "echo \"Static HTML site - no build needed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nktherider/redline-blog.git"
+  },
+  "keywords": ["superbike", "blog", "dubai", "uae", "motorcycle"],
+  "author": "Nandkishor Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nktherider/redline-blog/issues"
+  },
+  "homepage": "https://github.com/nktherider/redline-blog#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
